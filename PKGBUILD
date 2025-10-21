@@ -1,6 +1,6 @@
 pkgname=lld
-pkgver=21.1.0
-pkgrel=1
+pkgver=21.1.3
+pkgrel=2
 pkgdesc="Linker from the LLVM project"
 arch=('x86_64')
 url="https://lld.llvm.org/"
@@ -21,10 +21,10 @@ source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-${pkgver}
     https://github.com/llvm/llvm-project/releases/download/llvmorg-${pkgver}/llvm-${pkgver}.src.tar.xz
     https://github.com/llvm/llvm-project/releases/download/llvmorg-${pkgver}/libunwind-${pkgver}.src.tar.xz
     https://github.com/llvm/llvm-project/releases/download/llvmorg-${pkgver}/cmake-${pkgver}.src.tar.xz)
-sha256sums=(0394c634edb6fa421b3690b042cfd5a42d7f7ab141aebedecb0b1d23ff882422
-    0582ee18cb6e93f4e370cb4aa1e79465ba1100408053e1ff8294cef7fb230bd8
-    bbee5d791ed693d57ff0668e7f150e43cb9616501fd20a48f96768b16cab2ca2
-    528347c84c3571d9d387b825ef8b07c7ad93e9437243c32173838439c3b6028f)
+sha256sums=(8904e54475ca8426bc79b9278af1c3cccb40bf9958bd3f7d15f692f1b237d56f
+    a80f2dbfa24a0c4d81089e6245936dcd0c662c90f643d1706bb44e7bc8338ff1
+    ce4c70d9086bff55525cb4cc653306be46b668b7719b1d1a4da4d309902c9d38
+    4db6f028b6fe360f0aeae6e921b2bd2613400364985450a6d3e6749b74bf733a)
 
 prepare() {
     mv libunwind{-${pkgver}.src,}
